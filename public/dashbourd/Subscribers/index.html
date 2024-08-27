@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>لوحة التحكم | الصفحة الرئيسية</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/3d36366760.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Arvo:wght@400;700&family=Cairo:wght@300&family=Exo+2:wght@500&family=IBM+Plex+Serif:wght@200&family=Signika+Negative&family=Source+Serif+Pro&family=Tajawal:wght@300&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Arvo:wght@400;700&family=Exo+2:wght@500&family=IBM+Plex+Serif:wght@200&family=Signika+Negative&family=Source+Serif+Pro&family=Work+Sans:wght@600&display=swap"
+        rel="stylesheet">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
+
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+
+            <li class="nav-item"><a class="nav-link" href="index.html">
+                    <i class="fa-solid fa-gauge nav-icon"></i>الـرئـيـسـيـة<span
+                        class="badge badge-sm bg-info ms-auto">جديد</span></a>
+            </li>
+
+            <li class="nav-title">الصفحات</li>
+
+
+            <li class="nav-item"><a class="nav-link" href="responsible/index.html">
+                    <i class="fa-solid fa-droplet nav-icon"></i>الإداريين</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="program/index.html">
+                    <i class="fa-solid fa-pen nav-icon"></i>البرامج</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Subscribers/index.html">
+                    <i class="fa-solid fa-pen nav-icon"></i>المشتركين</a>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="message/index.html">
+                    <i class="fa-solid fa-pen nav-icon"></i>رسائل المستخدمين</a>
+            </li>
+
+        </ul>
+        <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+    </div>
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+        <header class="header header-sticky mb-4">
+
+            <div class="container-fluid">
+                <button class="header-toggler px-md-0 me-md-3" type="button"
+                    onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+                    <i class="fa-solid fa-bars icon icon-lg"></i>
+                </button><a class="header-brand d-md-none" href="#">
+
+                    <ul class="header-nav ms-3">
+                        <li class="nav-item dropdown"><a class="nav-link py-0 icon-login-xx"
+                                data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    <path fill-rule="evenodd" d="M8 9a5 5 0 0 0-5 5v1h10v-1a5 5 0 0 0-5-5z" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end pt-0">
+                                <div class="dropdown-header bg-light py-2">
+                                    <div class="fw-semibold">الإعدادات</div>
+                                </div>
+                                <a class="dropdown-item" href="#">
+                                    الملف الشخصي<i class="fa-regular fa-user icon px-2"></i>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    تسجيل الخروج<i class="fa-solid fa-right-from-bracket icon px-2"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+            </div>
+            <div class="header-divider"></div>
+            <div class="container-fluid">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb my-0 ms-2">
+                        <li class="breadcrumb-item">
+                            <!-- if breadcrumb is single--><span>عام</span>
+                        </li>
+                        <li class="breadcrumb-item active"><span>الـرئـيـسـيـة</span></li>
+                    </ol>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <div class="body flex-grow-1 px-3">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="icon-people icons me-2"></i>
+                                    <span>قائمة المشتركين</span>
+                                </div>
+                            </div>
+                            <div class="card-block">
+                                <div class="table-responsive">
+                                    <table class="table table-striped text-center">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>اسم ولي امر الطالب</th>
+                                                <th>البريد الإلكتروني</th>
+                                                <th>كلمة المرور</th>
+                                                <th>الطلاب</th>
+                                                <th>رقم الهاتف</th>
+                                                <th>رقم الطوارئ</th>
+                                                <th>حذف</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>محمود محمد</td>
+                                                <td>mahmoud@gmail.com</td>
+                                                <td>********</td>
+                                                <td>
+                                                    <svg class="icon-te-xx-w" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"
+                                                        width="40" height="35" data-toggle="modal"
+                                                        data-target="#studentsModal1">
+                                                        <!-- Student 1 -->
+                                                        <circle cx="16" cy="20" r="6" fill="#6fa3ef" />
+                                                        <rect x="13" y="28" width="6" height="16" fill="#6fa3ef" />
+
+                                                        <!-- Student 2 -->
+                                                        <circle cx="32" cy="20" r="6" fill="#f39c12" />
+                                                        <rect x="29" y="28" width="6" height="16" fill="#f39c12" />
+
+                                                        <!-- Student 3 -->
+                                                        <circle cx="48" cy="20" r="6" fill="#e74c3c" />
+                                                        <rect x="45" y="28" width="6" height="16" fill="#e74c3c" />
+                                                    </svg>
+                                                </td>
+                                                <td>972-0000000</td>
+                                                <td>972-00035300</td>
+                                                <td><a href="#"><i class="fa-regular fa-trash-can"></i></a></td>
+                                            </tr>
+
+                                            <!-- باقي الصفوف... -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <ul class="pagination justify-content-center mt-3">
+                                    <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal for Students -->
+        <div class="modal fade" id="studentsModal1" tabindex="-1" role="dialog" aria-labelledby="studentsModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="studentsModalLabel1">الطلاب المسجلين</h5>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>اسم الطالب</th>
+                                    <th>المرحلة الدراسية</th>
+                                    <th>البرنامج المسجل له</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>سعيد محمود</td>
+                                    <td>المرحلة 4</td>
+                                    <td>برنامج العلوم</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>محمد محمود</td>
+                                    <td>المرحلة 3</td>
+                                    <td>برنامج الرياضيات</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>أحمد محمود</td>
+                                    <td>المرحلة 5</td>
+                                    <td>برنامج اللغة العربية</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div> © 2023 يناير</div>
+            <div class="ms-auto">إنشاء : عبدالله داود</div>
+        </footer>
+
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="../vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
