@@ -1,10 +1,6 @@
-@extends('layouts.homepage')
-@section('title', 'الصفحة الرئيسية | إنشاء حساب جديد')
-
-@section('content')
+<x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
-
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
@@ -53,70 +49,4 @@
         </div>
     </form>
 
-    <div class="login-body mt-5">
-
-        <div class="login-container d-flex align-items-center justify-content-center" style=" padding: 40px;">
-            <div class="form-container w-100">
-                <h2 class="mb-4 text-center">إنشاء حساب</h2>
-                <form>
-                    <div class="mb-3 d-flex gap-3">
-                        <div class="flex-fill">
-                            <label for="father-name" class="form-label">اسم ولي أمر الطالب</label>
-                            <input type="text" class="form-control" id="father-name" required>
-                        </div>
-
-                        <div class="flex-fill">
-                            <label for="email" class="form-label">البريد الإلكتروني</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                    </div>
-                    <div id="studentFields">
-                        <div class="mb-3 d-flex gap-3">
-                            <div class="flex-fill">
-                                <label for="student-name-1" class="form-label">اسم الطالب</label>
-                                <input type="text" class="form-control" id="student-name-1" name="studentName[]"
-                                    required>
-                            </div>
-                            <div class="flex-fill">
-                                <label class="form-label" for="specificSizeSelect-1">المرحلة الدراسية</label>
-                                <select class="form-select" id="specificSizeSelect-1" name="studentGrade[]">
-                                    <option selected>إختر</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mb-3" style="margin-top: -8px;">
-                        <i class="fa-solid fa-plus" id="addStudentBtn" style="cursor: pointer;"></i>
-                    </div>
-
-                    <div class="mb-3 d-flex gap-3">
-                        <div class="flex-fill">
-                            <label for="password" class="form-label">كلمة المرور</label>
-                            <input type="password" class="form-control" id="password" required>
-                        </div>
-                        <div class="flex-fill">
-                            <label for="password" class="form-label">تأكيد كلمة المرور</label>
-                            <input type="password" class="form-control" id="password" required>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 d-flex gap-3">
-                        <div class="flex-fill">
-                            <label for="phone" class="form-label">رقم الهاتف</label>
-                            <input type="tel" class="form-control" id="phone" required>
-                        </div>
-                        <div class="flex-fill">
-                            <label for="emergency-phone" class="form-label">رقم الطوارئ</label>
-                            <input type="text" class="form-control" id="emergency-phone" required>
-                        </div>
-                    </div>
-                    <button class="button" type="submit"><i class="fa-solid fa-user-plus"></i><a href="" target="_blank"
-                            rel="noopener noreferrer" style="text-decoration: none;color: white">اشتراك</a></button>
-                </form>
-            </div>
-        </div>
-    </div>
-    @endsection
+</x-guest-layout>
